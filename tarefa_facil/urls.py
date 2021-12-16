@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from tarefa_facil.base.views import home
+from tarefa_facil.base.views import home, tarefa_listar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', home, name="home"),
+    path('tarefa/', tarefa_listar, name="tarefa_listar"),
 ]
