@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base/home.html' %}
 
-    <title>Listar Tarefa</title>
-
-    <meta name="description" content="Lista de tarefas diárias para acompanhamento de atividades">
-    <meta name="author" content="Getúlio Castro Jr">
-</head>
-<body>
-
-    <h2>Listar Tarefa</h2>
-    <hr/>
-    <ul>
-        <li>Pagar IPVA</li>
-        <li>Criar CARDs no Trello</li>
-        <li>Revisar código-fonte</li>
-    </ul>
-    
-</body>
-</html>
+{% block title %}Lista de Tarefas{% endblock title %}
