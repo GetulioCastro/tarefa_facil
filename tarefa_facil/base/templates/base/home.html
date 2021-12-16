@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tarefa Fácil</title>
+    <title>{% block title %}Tarefa Fácil{% endblock title %}</title>
 
     <meta name="description" content="Lista de tarefas diárias para acompanhamento de atividades">
     <meta name="author" content="Getúlio Castro Jr">
@@ -29,15 +29,17 @@
         </div>
         <br>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="button" class="btn btn-primary btn-lg" onclick="document.location='/tarefa/'">Entrar</button>
+            <a href="{% url /tarefa/ %}" class="btn btn-primary btn-lg">Entrar</a>
         </div>
         <br><br>
-        <div class="fixed-bottom">
-            <div class="card bg-white text-dark" style="max-width: 750px;">
-                <div class="card-header">
-                    <div class="card-body">
-                        <h5 class="card-title">Tarefa Fácil</h5>
-                        <p class="card-text">De maneira simples e intuitiva, gerencie suas rotinas diárias em apenas uma página. <br>Crie, edite, altere ou apague seus compromissos, com apenas um clique.</p>
+        <div class="text-align center">
+            <div class="fixed-bottom">
+                <div class="card bg-white text-dark" style="max-width: 750px;">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <h5 class="card-title">Tarefa Fácil</h5>
+                            <p class="card-text">De maneira simples e intuitiva, gerencie suas rotinas diárias em apenas uma página. <br>Crie, edite, altere ou apague seus compromissos, com apenas um clique.</p>
+                        </div>
                     </div>
                 </div>
             </div>
