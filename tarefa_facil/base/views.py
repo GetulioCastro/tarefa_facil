@@ -9,3 +9,8 @@ def home(request):
 def tarefa_listar(request):
     return render(request, 'base/tarefa_listar.html')
 
+def tarefa_cadastrar(request):
+    return render(request, 'base/tarefa_cadastrar.html')
+
+
+

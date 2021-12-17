@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{% block title %}Lista de Tarefas{% endblock title %}</title>
+    <title>{% block title %}Cadastro de Tarefas{% endblock title %}</title>
 
     <meta name="description" content="Lista de tarefas diárias para acompanhamento de atividades">
     <meta name="author" content="Getúlio Castro Jr">
@@ -17,11 +17,20 @@
 <body>
     <div class="p-3 mb-2 bg-dark text-white">
         <div class="text-center">
-            <h1>Minhas Tarefas</h1>
+            <h1>Cadastro de Tarefas</h1>
         </div>
     </div>
-    
-     <a href="{% url 'home' %}" class="btn btn-primary btn-sm">Voltar</a>
+
+    <div class="container-md">
+        <p>Cadastre sua tarefa, não perca seus compromissos!</p>
+        <br><br>    
+        <label>Tarefa:</label>
+        <br><br>
+        <input type="text" name="tarefa" value="tarefa">
+        <br><br>
+        <a href="{% url 'tarefa_listar' %}" class="btn btn-primary btn-sm">Cadastrar</a>
+        <br><br>
+    </div>
 
     <footer>
         <div class="fixed-bottom">
