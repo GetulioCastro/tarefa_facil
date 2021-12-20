@@ -20,20 +20,47 @@
             <h1>Minhas Tarefas</h1>
         </div>
     </div>
-    
-     <a href="{% url 'home' %}" class="btn btn-primary btn-sm">Voltar</a>
+    <br>
+    <br>
+    <div class="container">
+        
+        {% for tarefa in tarefas %}
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              <p>{{ tarefa.id }} - {{ tarefa.descricao }} - {{ tarefa.data }}</p> 
+            </label>
+          </div>
+        {% endfor %} 
+    </div>
 
+
+    <ul class="nav justify-content center">
+        <li class="nav-item">  
+            <a aria-current="page" href="{% url 'tarefa_cadastrar' %}" class="nav-link active">Cadastrar</a>
+        </li>
+        <li class="nav-item">  
+            <a aria-current="page" href="{% url 'tarefa_editar' %}" class="nav-link active">Editar</a>
+        </li>
+        <li class="nav-item">  
+            <a aria-current="page" href="{% url 'home' %}" class="nav-link active">Voltar</a>
+        </li>
+    </ul>
+
+    
+    <br><br>
     <footer>
-        <div class="fixed-bottom">
-            <div class="card bg-white text-dark" style="max-width: 750px;">
-                <div class="card-header">
-                    <div class="card-body">
-                        <h5 class="card-title">Tarefa Fácil</h5>
-                        <p class="card-text">De maneira simples e intuitiva, gerencie suas rotinas diárias em apenas uma página. <br>Crie, edite, altere ou apague seus compromissos, com apenas um clique.</p>
+
+        <div class="nav justify-content-center">
+                <div class="card bg-white text-dark" style="max-width: 750px;">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <h5 class="card-title">Tarefa Fácil</h5>
+                            <p class="card-text">De maneira simples e intuitiva, gerencie suas rotinas diárias em apenas uma página. <br>Crie, edite, altere ou apague seus compromissos, com apenas um clique.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         
     </footer>
 </body>
