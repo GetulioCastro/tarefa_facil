@@ -1,0 +1,9 @@
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.card-altura {
+    min-height: 170px;
+}
