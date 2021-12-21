@@ -9,10 +9,10 @@ def home(request):
 def tarefa_listar(request):
     context = {
         "tarefas": [
-            {"id": 1, "descricao": "pagar IPVA"},
-            {"id": 2, "descricao": "pagar Equatorial"},
-            {"id": 3, "descricao": "pagar Agespisa"},
-            {"id": 4, "descricao": "lavar o carro"},
+            {"id": 1, "descricao": "pagar IPVA", "tipo": "['Urgente', 'Importante', 'Fim do Dia', 'Delegar']"},
+            {"id": 2, "descricao": "pagar Equatorial", "tipo": "['Urgente', 'Importante', 'Fim do Dia', 'Delegar']"},
+            {"id": 3, "descricao": "pagar Agespisa", "tipo": "['Urgente', 'Importante', 'Fim do Dia', 'Delegar']"},
+            {"id": 4, "descricao": "lavar o carro", "tipo": "['Urgente', 'Importante', 'Fim do Dia', 'Delegar']"},
         ]
     }
     return render(request, 'base/tarefa_listar.html', context)

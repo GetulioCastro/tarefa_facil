@@ -21,30 +21,33 @@
         </div>
     </div>
     <div class="nav justify-content-center">
-        <div class="container">
+      
                 {% for tarefa in tarefas %}
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-3">
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tarefa</h5>
-                                        <p>{{ tarefa.id }} - {{ tarefa.descricao }}</p>
-                                        <a href="tarefa_editar.html" class="btn btn-primary btn-sm">Editar</a>
-                                        <a href="tarefa_deletar.html" class="btn btn-primary btn-sn">Deletar</a>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tarefa</h5>
+                                            <p>{{ tarefa.id }} ) {{ tarefa.descricao }} - {{ tarefa.tipo }}</p>
+                                            <a href="{% url 'tarefa_editar' %}" class="btn btn-primary btn-sm">Editar</a>
+                                            <a href="{% url 'tarefa_deletar' %}" class="btn btn-primary btn-sn">Deletar</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 {% endfor %} 
-        </div>
+        
     </div>
 
 
     <div class="nav justify-content-center">
         <div class="position-absolute">
-            <a href="{% url 'tarefa_cadastrar' %}" class="btn btn-primary btn-sm">Cadastrar</a>
+            <a href="{% url 'tarefa_cadastrar' %}" class="btn btn-primary btn-sm">Adicionar Tarefa</a>
             <a href="{% url 'home' %}" class="btn btn-primary btn-sm">Voltar</a>
         </div>
     </div>
