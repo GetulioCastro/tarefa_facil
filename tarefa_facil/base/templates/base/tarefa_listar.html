@@ -20,38 +20,34 @@
             <h1>Minhas Tarefas</h1>
         </div>
     </div>
-    <br>
-    <br>
-    <div class="container">
-        
-        {% for tarefa in tarefas %}
-         <div class="container">
-             <div class="row">
-                 <div class="col-sm-3">
-                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Tarefa</h5>
-                            <p>{{ tarefa.id }} - {{ tarefa.descricao }}</p>
-                            <a href="tarefa_editar.html" class="btn btn-primary btn-sm">Editar</a>
-                            <a href="tarefa_deletar.html" class="btn btn-primary btn-sn">Deletar</a>
+    <div class="nav justify-content-center">
+        <div class="container">
+                {% for tarefa in tarefas %}
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tarefa</h5>
+                                        <p>{{ tarefa.id }} - {{ tarefa.descricao }}</p>
+                                        <a href="tarefa_editar.html" class="btn btn-primary btn-sm">Editar</a>
+                                        <a href="tarefa_deletar.html" class="btn btn-primary btn-sn">Deletar</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                 </div>
-             </div>
-         </div>
-        {% endfor %} 
+                {% endfor %} 
+        </div>
     </div>
 
 
-    <ul class="nav justify-content center">
-        <li class="nav-item">  
-            <a aria-current="page" href="{% url 'tarefa_cadastrar' %}" class="nav-link active">Cadastrar</a>
-        </li>
-        <li class="nav-item">  
-            <a aria-current="page" href="{% url 'home' %}" class="nav-link active">Voltar</a>
-        </li>
-    </ul>
-
+    <div class="nav justify-content-center">
+        <div class="position-absolute">
+            <a href="{% url 'tarefa_cadastrar' %}" class="btn btn-primary btn-sm">Cadastrar</a>
+            <a href="{% url 'home' %}" class="btn btn-primary btn-sm">Voltar</a>
+        </div>
+    </div>
     
     <br><br>
     <footer>

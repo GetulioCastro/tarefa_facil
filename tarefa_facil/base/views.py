@@ -9,10 +9,10 @@ def home(request):
 def tarefa_listar(request):
     context = {
         "tarefas": [
-            {"id": 1, "descricao": "pagar IPVA", "data": "20/12/21"},
-            {"id": 2, "descricao": "pagar Equatorial", "data": "20/12/21"},
-            {"id": 3, "descricao": "pagar Agespisa", "data": "20/12/21"},
-            {"id": 4, "descricao": "lavar o carro", "data": "20/12/21"},
+            {"id": 1, "descricao": "pagar IPVA"},
+            {"id": 2, "descricao": "pagar Equatorial"},
+            {"id": 3, "descricao": "pagar Agespisa"},
+            {"id": 4, "descricao": "lavar o carro"},
         ]
     }
     return render(request, 'base/tarefa_listar.html', context)
