@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tarefa_facil.base',
+    'tarefa_facil.tarefa',
 ]
 
 MIDDLEWARE = [
