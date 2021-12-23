@@ -26,15 +26,14 @@
     <div class="nav justify-conten-center">
         <div class="w-75 p-3">
             <div class="input-group">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo da Tarefa</button>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{% url 'tarefa_cadastrar' %}">Urgente</a></li>
-                    <li><a class="dropdown-item" href="{% url 'tarefa_cadastrar' %}">Importante</a></li>
-                    <li><a class="dropdown-item" href="{% url 'tarefa_cadastrar' %}">Fim do Dia</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="{% url 'tarefa_cadastrar' %}">Delegar</a></li>
-                    </ul>
                 <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option value="selected">Tipos de Tarefas</option>
+                    <option value="Urgente">Urgente</option>
+                    <option value="Importatnte">Importante</option>
+                    <option value="Fim do Dia">Fim do Dia</option>
+                    <option value="Delegar">Delegar</option>
+                </select>   
             </div>
             <br><br>
             <div class="nav justify-content-center">
