@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base/base.html' %}
 
-    <title>{% block title %}Editar Tarefas{% endblock title %}</title>
+{% block title %}Editar Tarefas{% endblock title %}
 
-    <meta name="description" content="Lista de tarefas diárias para acompanhamento de atividades">
-    <meta name="author" content="Getúlio Castro Jr">
+{% block description %}Página para edição de tarefas{% endblock description %}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-    <div class="p-3 mb-2 bg-dark text-white">
-        <div class="text-center">
-             <h1>Editar Tarefas</h1>
-        </div>
-    </div>
-    <br>
+{% block cabecalho %}<h1>Editar Tarefas</h1>{% endblock cabecalho %}
+
+{% block body %}
+
     <div class="nav justify-content-center">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -32,17 +19,6 @@
             </div>
         </div>
     </div>
-    <br><br>
+    <br>
 
-    <div class="nav justify-content-center">
-        <div class="card bg-white text-dark" style="max-width: 750px;">
-            <div class="card-header">
-                <div class="card-body">
-                    <h5 class="card-title">Tarefa Fácil</h5>
-                    <p class="card-text">De maneira simples e intuitiva, gerencie suas rotinas diárias em apenas uma página. <br>Crie, edite, altere ou apague seus compromissos, com apenas um clique.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+{% endblock body%}
