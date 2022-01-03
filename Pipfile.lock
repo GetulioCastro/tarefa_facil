@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e3825b515bf7dc5869ce1f841a5e8d0aea223970b571dc2d64bef7c48d28c72c"
+            "sha256": "72aeef39058d1d9a06bb2c9fba8a76d361b7ff901afefa47d2b363fc6808d1f6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -73,7 +73,9 @@
             "version": "==0.4.4"
         },
         "coverage": {
-            "extras": [],
+            "extras": [
+                "toml"
+            ],
             "hashes": [
                 "sha256:01774a2c2c729619760320270e42cd9e797427ecfddd32c2a7b639cdc481f3c0",
                 "sha256:03b20e52b7d31be571c9c06b74746746d4eb82fc260e594dc662ed48145e9efd",
@@ -142,6 +144,13 @@
             "index": "pypi",
             "version": "==20.1.0"
         },
+        "heroku": {
+            "hashes": [
+                "sha256:cbeba42b628bc38504d49ace86b8c1729ab2156e530fb1823954988932c8f7fb"
+            ],
+            "index": "pypi",
+            "version": "==0.1.4"
+        },
         "idna": {
             "hashes": [
                 "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff",
@@ -204,6 +213,12 @@
             ],
             "index": "pypi",
             "version": "==3.0.0"
+        },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:6f197348b46fb8cdf9f3fcfc2a7d5a97da95db3e2e8667cf657216274fe1b009"
+            ],
+            "version": "==1.5"
         },
         "requests": {
             "hashes": [

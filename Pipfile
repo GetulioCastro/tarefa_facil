@@ -8,10 +8,11 @@ django = "*"
 pytest-cov = "*"
 codecov = "*"
 gunicorn = "*"
+heroku = "*"
 
 [dev-packages]
 pytest-django = "*"
 flake8 = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.9.9"
